@@ -18,28 +18,28 @@
 
 ## ADS操作演示
 
+>获取当前文件/文件夹中的所有隐藏数据流
+
 ![图片](https://user-images.githubusercontent.com/95424885/173769526-58a2099b-bb4f-4b84-8667-e7fc2d6aacaa.png)
 
----
+>删除隐藏数据流
 
 ![图片](https://user-images.githubusercontent.com/95424885/173769807-0bf24eb8-2d6b-473f-87b8-ab967ae004b8.png)
 
----
+>将内容/文件作为交换数据流写入/添加到文件或文件夹
 
 ![图片](https://user-images.githubusercontent.com/95424885/173770606-93a92c7f-aff4-421a-b0fd-d1e6ebbeb8aa.png)
-
----
 
 ![图片](https://user-images.githubusercontent.com/95424885/173770908-5ae7ecd5-14db-437c-9d37-6211827d45ff.png)
 
 ## 文件恢复操作演示
 
+>小文件恢复演示
+
 ![图片](https://user-images.githubusercontent.com/95424885/173771767-9798146d-6acf-4c49-9e90-9532f2c43219.png)
 
----
+>大文件恢复演示
 
 ![图片](https://user-images.githubusercontent.com/95424885/173772072-5fba0c85-5707-422a-a632-2e9c54d64a5c.png)
-
----
 
 ![图片](https://user-images.githubusercontent.com/95424885/173772287-416d9424-716b-4100-8e43-a815619be884.png)
