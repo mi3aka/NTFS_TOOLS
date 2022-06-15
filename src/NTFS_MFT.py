@@ -104,9 +104,12 @@ class MFT():
         if ctypes.windll.shell32.IsUserAnAdmin() == 0:  #权限检查
             print("Permission denied! Please run as Admin")
             exit(-1)
-        self.Path = os.path.normpath(path).split(os.sep)
-        self.NTFS_Drive = open(r"\\.\\" + self.Path[0], 'rb')  #盘符处理
+        self.drivename = os.path.normpath(path).split(os.sep)[0]
+        self.NTFS_Drive = open(r"\\.\\" + self.drivename, 'rb')  #盘符处理
         self.init()
+
+    def __del__(self):
+        self.NTFS_Drive.close()
 
     def init(self):
         self.NTFS_Drive.read(1)
@@ -155,7 +158,7 @@ class MFT():
 
     def Find_Full_Filename(self, mft_lcn):
         if mft_lcn == self.MFT_Start_Posi + 0x1400:  #根目录位于MFT表的第五个记录,相对MFT偏移为0x1400
-            return self.Path[0]
+            return self.drivename
         self.NTFS_Drive.seek(mft_lcn)
         self.NTFS_Drive.read(56)  #读取MFT头部
 
