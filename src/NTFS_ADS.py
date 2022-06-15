@@ -160,12 +160,13 @@ class ADS():
         else:
             return True
 
-    def add_ads_from_stdin(self, content, original_filename, target_filename):  #将内容作为交换数据流写入到文件或文件夹 echo qwer>123.txt:789.txt
-        filename = original_filename + ":" + target_filename
+    def add_ads_from_stdin(self, content, original_filename, target_filename):  #将内容作为交换数据流写入到文件或文件夹 cmd echo qwer>123.txt:789.txt
+        target_filename = os.path.normpath(target_filename).split(os.sep)
+        filename = original_filename + ":" + target_filename[-1]
         with open(filename, "wb") as f:
             f.write(content)
 
-    def add_ads_from_file(self, original_filename, target_filename):  #将已经存在的一个文件用交换数据流的方式添加到另外一个文件或文件夹上 type 123.txt>>test:123.txt
+    def add_ads_from_file(self, original_filename, target_filename):  #将已经存在的一个文件用交换数据流的方式添加到另外一个文件或文件夹上 cmd type 123.txt>>test:123.txt
         if os.path.exists(original_filename) and os.path.isfile(original_filename):
             with open(original_filename, "rb") as f:
                 content = f.read()
