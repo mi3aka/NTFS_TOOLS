@@ -168,7 +168,7 @@ class ADS():
 
     def add_ads_from_file(self, original_filename, target_filename):  #将已经存在的一个文件用交换数据流的方式添加到另外一个文件或文件夹上 cmd type 123.txt>>test:123.txt
         if os.path.exists(original_filename) and os.path.isfile(original_filename):
-            with open(original_filename, "rb") as f:
+            with open(target_filename, "rb") as f:
                 content = f.read()
             self.add_ads_from_stdin(content, original_filename, target_filename)
             return True
