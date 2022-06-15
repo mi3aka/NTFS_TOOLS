@@ -16,6 +16,14 @@
 
 [分析NTFS文件系统内部结构](https://blog.51cto.com/dengqi/1351300)
 
+## 程序使用方法
+
+![图片](https://user-images.githubusercontent.com/95424885/173773460-d4b66303-f4e4-42a9-a7d1-4272b75d4f15.png)
+
+---
+
+![图片](https://user-images.githubusercontent.com/95424885/173773543-94fc8077-6102-47e8-949b-f5b826afa265.png)
+
 ## ADS操作演示
 
 >获取当前文件/文件夹中的所有隐藏数据流
